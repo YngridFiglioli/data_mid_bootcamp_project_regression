@@ -7,7 +7,7 @@
 
 ### About the development
 * The work was divided among the team members, but frequent collaboration was necessary to overcome obstacles and ensure cohesive results. 
-* The final product comprises of code, SQL queries, Tableau visualizations, and a business-oriented presentation, all of which have been influenced by the contributions of all team members. 
+* The final product comprises of Python code, SQL queries, Tableau visualizations, and a business-oriented presentation, all of which have been influenced by the contributions of all team members. 
 
 * The team consisted of: Ela, Laura, and myself.
 
