@@ -11,5 +11,5 @@ This is a group project from the Data Analytics Ironhack bootcamp.
 
 -> We divided the work, but everyone came toghether to solve problems, bugs, to bild a strong presentation and of course, the code, queries and visuals have a hint from all three of us.
 
-![female](https://user-images.githubusercontent.com/97544770/212553117-4c7936fa-5ae3-4340-b728-7b141bee985f.gif)
+<img src="https://user-images.githubusercontent.com/97544770/212553117-4c7936fa-5ae3-4340-b728-7b141bee985f.gif" width="150" height="150"></img>
 
