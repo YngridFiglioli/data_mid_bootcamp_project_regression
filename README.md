@@ -1,15 +1,15 @@
 # Case Study: Regression
 
-This is a group project from the Data Analytics Ironhack bootcamp. 
-
 ### Summary
 
-* The goal is to build a model that will predict the price of a house based on features provided in the dataset.
-* To do so, we had several requirements to fullfil in Python, MySQL and Tableau, also finishing it with a business oriented presentention.
-* We divided the work, but everyone came together to solve problems. The code, queries and visuals have a hint from all three of us, along with the presentation.
+* The objective of this project is to develop a predictive model that accurately estimates the price of a residence based on a set of provided features.
+* This project was executed as part of the Data Analytics Ironhack bootcamp and required the utilization of Python, MySQL, and Tableau.
 
-### Authors
-The group is formed of three tech women: Ela, Laura and myself.
+### About the development
+* The work was divided among the team members, but frequent collaboration was necessary to overcome obstacles and ensure cohesive results. 
+* The final product comprises of code, SQL queries, Tableau visualizations, and a business-oriented presentation, all of which have been influenced by the contributions of all team members. 
+
+* The team consisted of: Ela, Laura, and myself.
 
 <img src="https://user-images.githubusercontent.com/97544770/212553117-4c7936fa-5ae3-4340-b728-7b141bee985f.gif" width="150" height="150"></img>
 
