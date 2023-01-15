@@ -99,7 +99,35 @@ from house_price_data group by grade order by avg_price asc;
 
 select id, price from house_price_data order by price desc limit 10;
 
-select round(avg(price),0) as avg_price from house_price_data; #Answer: 540297
+select round(avg(price),0) as avg_price from house_price_data; #Answer: 
+
+select distinct(bedrooms), round(avg(price),0) as avg_price from house_price_data group by bedrooms order by avg_price;
+select bedrooms, round(avg(sqft_living),0) as avg_sqft_living from house_price_data group by bedrooms order by avg_sqft_living;
+select waterfront, round(avg(price),0) as avg_price from house_price_data group by waterfront order by avg_price;
+
+select `condition`, avg(grade) as avg_grade from house_price_data group by `condition` order by avg_grade asc;
+select grade, avg(`condition`) as avg_condition from house_price_data group by grade order by avg_condition asc;
+#Answer: the condition with avg_grade seems to have a correlation, since both ascende, starting with condition 1 and grade 5. 
+#However, the second query doesnt show a correlation between grade and avg_condition.alter
+
+select * from house_price_data where bedrooms in (3,4) and bathrooms > 3 and floors = 1 and waterfront = 0 and `condition`>= 3 and grade >= 5 and price < 300000 order by price asc;
+#Answer: we dont have a house with that exact conditions to show the client, maybe if the client accept for a <= 3 bathrooms, we have 53 options.
+
+select id,price from house_price_data where price > (select (avg(price) * 2) from house_price_data) order by price asc;
+
+create view outliers_avgprice_houses as (select id, price from house_price_data where price > (select (avg(price) * 2) from house_price_data));
+select * from outliers_avgprice_houses;
+
+select round((avg(four.price) - avg(three.price)),2) as diff_avgprice from house_price_data as three
+cross join house_price_data as four
+where three.bedrooms = 3 and four.bedrooms = 4 group by four.bedrooms;
+#Answer the difference from the price is considerable high from 3 to 4 bedrooms.
+
+select distinct(zipcode) as zones from house_price_data;
+
+select id, yr_renovated, bedrooms, bathrooms, grade, `condition`, zipcode, price from house_price_data where yr_renovated != 0 order by price asc;
+
+select * from (select *, rank() over (order by price desc) as ranking from house_price_data) as ranked_table where ranking = 11;
 
 
 
